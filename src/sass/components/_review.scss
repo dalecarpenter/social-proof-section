@@ -1,0 +1,31 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 7.8rem;
+
+  background-color: $color-neutral-light;
+  border-radius: 8px;
+
+  &__rating {
+    height: 1.6rem;
+  }
+
+  &__icon {
+    width: 1.7rem;
+    height: 1.6rem;
+
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.12;
+    color: $color-magenta;
+
+    height: 1.5rem;
+  }
+}

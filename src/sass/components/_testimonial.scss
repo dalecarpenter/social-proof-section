@@ -1,0 +1,51 @@
+.testimonial {
+  position: relative;
+  background-color: $color-magenta;
+  height: 24.8rem;
+  border-radius: 8px;
+  color: $color-white;
+
+  &__cite, &__quote {
+    position: absolute;
+    left: 3.2rem;
+  }
+
+  &__cite {
+    top: 4rem;
+    display: flex;
+  }
+
+  &__photo {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+
+    margin-right: 2.3rem;
+  }
+
+  &__user {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  &__user-name,
+  &__user-role {
+    font-size: 1.3rem;
+    line-height: 1.12;
+  }
+
+  &__user-role {
+    font-weight: 400;
+    color: $color-pink;
+  }
+
+  &__quote {
+    font-size: 1.3rem;
+    letter-spacing: -0.023rem;
+    line-height: 1.69230769;
+
+    top: 10.6rem;
+    width: 80.39%;
+  }
+}

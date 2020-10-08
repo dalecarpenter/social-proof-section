@@ -3,13 +3,106 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: border-box; }
 
 html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  background-color: white; }
 
 body {
-  font-family: Spartan, sans-serif; }
+  font-family: Spartan, sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #937b92;
+  text-align: center; }
+
+.heading-primary {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 1;
+  letter-spacing: -0.114rem;
+  color: #502050;
+  margin-bottom: 1.8rem; }
+
+.review {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 7.8rem;
+  background-color: #f7f2f7;
+  border-radius: 8px; }
+  .review__rating {
+    height: 1.6rem; }
+  .review__icon {
+    width: 1.7rem;
+    height: 1.6rem; }
+    .review__icon:not(:last-child) {
+      margin-right: 0.5rem; }
+  .review__text {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.12;
+    color: #502050;
+    height: 1.5rem; }
+
+.testimonial {
+  position: relative;
+  background-color: #502050;
+  height: 24.8rem;
+  border-radius: 8px;
+  color: white; }
+  .testimonial__cite, .testimonial__quote {
+    position: absolute;
+    left: 3.2rem; }
+  .testimonial__cite {
+    top: 4rem;
+    display: flex; }
+  .testimonial__photo {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    margin-right: 2.3rem; }
+  .testimonial__user {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+  .testimonial__user-name, .testimonial__user-role {
+    font-size: 1.3rem;
+    line-height: 1.12; }
+  .testimonial__user-role {
+    font-weight: 400;
+    color: #ee68a4; }
+  .testimonial__quote {
+    font-size: 1.3rem;
+    letter-spacing: -0.023rem;
+    line-height: 1.69230769;
+    top: 10.6rem;
+    width: 80.39%; }
+
+.social-proof {
+  background: url("../images/bg-pattern-top-mobile.svg") no-repeat, url("../images/bg-pattern-bottom-mobile.svg") no-repeat bottom right;
+  background-size: auto, 100% auto;
+  padding: 8rem 6.4% 9.9rem 6.4%; }
+
+.copy-box {
+  text-align: center; }
+  .copy-box__text {
+    line-height: 1.66666667;
+    letter-spacing: -.05rem; }
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 26.6rem;
+  margin-top: 4rem; }
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 77.6rem;
+  text-align: left;
+  margin-top: 4.9rem; }

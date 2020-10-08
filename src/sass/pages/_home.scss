@@ -1,0 +1,33 @@
+.social-proof {
+  background: url('../images/bg-pattern-top-mobile.svg') no-repeat,
+    url('../images/bg-pattern-bottom-mobile.svg') no-repeat bottom right;
+  background-size: auto, 100% auto;
+
+  padding: 8rem 6.4% 9.9rem 6.4%;
+}
+
+.copy-box {
+  text-align: center;
+
+  &__text {
+    line-height: 1.66666667;
+    letter-spacing: -.05rem;
+  }
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 26.6rem;
+  margin-top: 4rem;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 77.6rem;
+  text-align: left;
+  margin-top: 4.9rem;
+}
