@@ -1,0 +1,29 @@
+.section-header {
+  width: 100%;
+  max-width: 44.5rem;
+
+  @include respond(bp-line-break) {
+    text-align: left;
+    margin-right: auto;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 1;
+    letter-spacing: -0.114rem;
+    color: $color-magenta;
+    margin-bottom: 2.4rem;
+
+    @include respond(bp-line-break) {
+      font-size: 4.8rem;
+      letter-spacing: -0.171rem;
+      margin-bottom: 1.4rem;
+    }
+  }
+
+  &__copy {
+    line-height: 1.66666667;
+    letter-spacing: -0.05rem;
+  }
+}

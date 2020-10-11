@@ -1,18 +1,34 @@
 .testimonial {
-  position: relative;
-  background-color: $color-magenta;
-  height: 24.8rem;
-  border-radius: 8px;
+  max-width: 35rem;
+  margin: auto;
+  text-align: left;
   color: $color-white;
+  background-color: $color-magenta;
+  border-radius: 8px;
 
-  &__cite, &__quote {
-    position: absolute;
-    left: 3.2rem;
+  @include respond(largest) {
+  }
+
+  &--1 {
+    margin: 0 auto 1.6rem auto;
+
+    @include respond(largest) {
+      margin: 0 auto 3.2rem 0;
+    }
+  }
+
+  &--3 {
+    margin: 1.6rem auto 0 auto;
+
+    @include respond(largest) {
+      margin: 3.2rem 0 0 auto;
+    }
   }
 
   &__cite {
-    top: 4rem;
     display: flex;
+    margin-top: 4rem;
+    margin-left: 3.2rem;
   }
 
   &__photo {
@@ -45,7 +61,11 @@
     letter-spacing: -0.023rem;
     line-height: 1.69230769;
 
-    top: 10.6rem;
-    width: 80.39%;
+    margin: 2.6rem 3.2rem 3.2rem;
+    max-width: 28.6rem;
+
+    @include respond(largest) {
+      margin-bottom: 4rem;
+    }
   }
 }

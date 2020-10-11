@@ -1,33 +1,63 @@
 .social-proof {
-  background: url('../images/bg-pattern-top-mobile.svg') no-repeat,
-    url('../images/bg-pattern-bottom-mobile.svg') no-repeat bottom right;
-  background-size: auto, 100% auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 8rem 6.4% 0;
 
-  padding: 8rem 6.4% 9.9rem 6.4%;
-}
+  background-image: url('../images/bg-pattern-top-mobile.svg'),
+    url('../images/bg-pattern-bottom-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  background-size: auto, 100% 32.87581699346405%;
 
-.copy-box {
-  text-align: center;
+  @include respond(bp-line-break) {
+    padding-top: 12.7rem;
+  }
 
-  &__text {
-    line-height: 1.66666667;
-    letter-spacing: -.05rem;
+  @include respond(largest) {
+    padding: 12.7rem 16.5rem 0;
+
+    background-image: url('../images/bg-pattern-top-desktop.svg'),
+      url('../images/bg-pattern-bottom-desktop.svg');
+    background-size: auto;
   }
 }
 
 .reviews {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 26.6rem;
+  width: 100%;
+  max-width: 54rem;
   margin-top: 4rem;
+
+  @include respond(bp-line-break) {
+    margin-top: 1.8rem;
+  }
+
+  @include respond(largest) {
+    height: 20rem;
+    margin-left: auto;
+  }
 }
 
 .testimonials {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 77.6rem;
-  text-align: left;
-  margin-top: 4.9rem;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 4.9rem 0 8.54rem;
+
+  @include respond(bp-line-break) {
+    margin: 7.2rem 0 8.64rem;
+  }
+}
+
+.attribution {
+  width: 100%;
+
+  font-size: 1.1rem;
+  text-align: center;
+
+  & a {
+    color: $color-pink;
+  }
 }

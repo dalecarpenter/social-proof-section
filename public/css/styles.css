@@ -18,23 +18,27 @@ body {
   color: #937b92;
   text-align: center; }
 
-.heading-primary {
-  font-weight: 700;
-  font-size: 3.2rem;
-  line-height: 1;
-  letter-spacing: -0.114rem;
-  color: #502050;
-  margin-bottom: 1.8rem; }
-
 .review {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 7.8rem;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 44.5rem;
   background-color: #f7f2f7;
   border-radius: 8px; }
+  .review--1 {
+    margin: 0 auto 1.6rem 0; }
+  .review--2 {
+    margin: 0 auto; }
+  .review--3 {
+    margin: 1.6rem 0 0 auto; }
   .review__rating {
-    height: 1.6rem; }
+    height: 1.6rem;
+    margin: 1.6rem auto;
+    min-width: 50%; }
+    @media only screen and (min-width: 90em) {
+      .review__rating {
+        margin: 2rem 3.2rem;
+        min-width: 0; } }
   .review__icon {
     width: 1.7rem;
     height: 1.6rem; }
@@ -45,20 +49,33 @@ body {
     font-weight: 700;
     line-height: 1.12;
     color: #502050;
-    height: 1.5rem; }
+    height: 1.5rem;
+    margin: auto auto 1.6rem; }
+    @media only screen and (min-width: 90em) {
+      .review__text {
+        margin: auto auto 2rem 0; } }
 
 .testimonial {
-  position: relative;
+  max-width: 35rem;
+  margin: auto;
+  text-align: left;
+  color: white;
   background-color: #502050;
-  height: 24.8rem;
-  border-radius: 8px;
-  color: white; }
-  .testimonial__cite, .testimonial__quote {
-    position: absolute;
-    left: 3.2rem; }
+  border-radius: 8px; }
+  .testimonial--1 {
+    margin: 0 auto 1.6rem auto; }
+    @media only screen and (min-width: 90em) {
+      .testimonial--1 {
+        margin: 0 auto 3.2rem 0; } }
+  .testimonial--3 {
+    margin: 1.6rem auto 0 auto; }
+    @media only screen and (min-width: 90em) {
+      .testimonial--3 {
+        margin: 3.2rem 0 0 auto; } }
   .testimonial__cite {
-    top: 4rem;
-    display: flex; }
+    display: flex;
+    margin-top: 4rem;
+    margin-left: 3.2rem; }
   .testimonial__photo {
     height: 4rem;
     width: 4rem;
@@ -78,31 +95,79 @@ body {
     font-size: 1.3rem;
     letter-spacing: -0.023rem;
     line-height: 1.69230769;
-    top: 10.6rem;
-    width: 80.39%; }
+    margin: 2.6rem 3.2rem 3.2rem;
+    max-width: 28.6rem; }
+    @media only screen and (min-width: 90em) {
+      .testimonial__quote {
+        margin-bottom: 4rem; } }
+
+.section-header {
+  width: 100%;
+  max-width: 44.5rem; }
+  @media only screen and (min-width: 70.563em) {
+    .section-header {
+      text-align: left;
+      margin-right: auto; } }
+  .section-header__title {
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 1;
+    letter-spacing: -0.114rem;
+    color: #502050;
+    margin-bottom: 2.4rem; }
+    @media only screen and (min-width: 70.563em) {
+      .section-header__title {
+        font-size: 4.8rem;
+        letter-spacing: -0.171rem;
+        margin-bottom: 1.4rem; } }
+  .section-header__copy {
+    line-height: 1.66666667;
+    letter-spacing: -0.05rem; }
 
 .social-proof {
-  background: url("../images/bg-pattern-top-mobile.svg") no-repeat, url("../images/bg-pattern-bottom-mobile.svg") no-repeat bottom right;
-  background-size: auto, 100% auto;
-  padding: 8rem 6.4% 9.9rem 6.4%; }
-
-.copy-box {
-  text-align: center; }
-  .copy-box__text {
-    line-height: 1.66666667;
-    letter-spacing: -.05rem; }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 8rem 6.4% 0;
+  background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  background-size: auto, 100% 32.87581699346405%; }
+  @media only screen and (min-width: 70.563em) {
+    .social-proof {
+      padding-top: 12.7rem; } }
+  @media only screen and (min-width: 90em) {
+    .social-proof {
+      padding: 12.7rem 16.5rem 0;
+      background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+      background-size: auto; } }
 
 .reviews {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 26.6rem;
+  width: 100%;
+  max-width: 54rem;
   margin-top: 4rem; }
+  @media only screen and (min-width: 70.563em) {
+    .reviews {
+      margin-top: 1.8rem; } }
+  @media only screen and (min-width: 90em) {
+    .reviews {
+      height: 20rem;
+      margin-left: auto; } }
 
 .testimonials {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 77.6rem;
-  text-align: left;
-  margin-top: 4.9rem; }
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 4.9rem 0 8.54rem; }
+  @media only screen and (min-width: 70.563em) {
+    .testimonials {
+      margin: 7.2rem 0 8.64rem; } }
+
+.attribution {
+  width: 100%;
+  font-size: 1.1rem;
+  text-align: center; }
+  .attribution a {
+    color: #ee68a4; }

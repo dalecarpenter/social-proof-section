@@ -1,9 +1,12 @@
 @import 'abstracts/variables';
+@import 'abstracts/mixins';
 
 @import 'base/base';
 @import 'base/typography';
 
 @import 'components/review';
 @import 'components/testimonial';
+
+@import 'layout/section-header';
 
 @import 'pages/home';
